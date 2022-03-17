@@ -1,0 +1,82 @@
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: sans-serif;
+    font-size:1.3rem;
+
+    /* ponemos la propiedad para que no scroll */
+    overflow:hidden;
+}
+
+/* colocamos una clase bg-image para ponerles absolute y acomodarlos */
+.bg-image{
+    position: absolute;
+}
+
+/* primero ponemos para el bg-top */
+.bg-image-top{
+    top: -500px;
+    left: -300px;
+}
+/* segundo ponemos para el bg-bottom */
+.bg-image-bottom{
+    right: -150px;
+    bottom: -600px;
+}
+/* Creamos la card */
+.card{
+    /* los circulos estan encima del card haci q usamos el position relative para el apilamiento */
+    position: relative;
+    top: 15vh;
+    width: 400px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.card-header{
+    position: relative;
+    height:120px;
+    text-align: center;
+    background-color: black;
+}
+.card-header-image{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.card-header-profile{
+    position:absolute;
+    top: 90px;
+    left: 150px;
+    border-radius: 50%;
+    border: .3rem solid white;
+    background-color: #fff;
+}
+.card-body{
+    position: absolute;
+    top:12rem;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    border-bottom: 2px solid #0002;
+}
+.card-footer{
+    position: absolute;
+    bottom:1rem;
+    width: 100%;
+    text-align: center;
+}
+.card-stats{
+    display:inline-block;
+    width: 100px;
+    text-align: center;
+    margin:0 .5em;
+}
+
+
+
+
+
